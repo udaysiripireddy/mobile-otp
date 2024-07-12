@@ -30,7 +30,7 @@ const Phone = () => {
         console.error("Error during signInWithPhoneNumber:", error);
       });
   };
-
+  
   const verifyOtp = () => {
     const credential = PhoneAuthProvider.credential(verificationId, otp);
     console.log(credential);
